@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CacheImage" representedClassName="CacheImage" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCached" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="DraftImage" representedClassName="DraftImage" syncable="YES" codeGenerationType="class">
+        <attribute name="associatedRecipeUUID" optional="YES" attributeType="String"/>
+        <attribute name="croppedImage" optional="YES" attributeType="Binary"/>
+        <attribute name="filteredImage" optional="YES" attributeType="Binary"/>
+        <attribute name="index_orderImage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rawImage" optional="YES" attributeType="Binary"/>
+    </entity>
+    <elements>
+        <element name="CacheImage" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="DraftImage" positionX="-63" positionY="9" width="128" height="118"/>
+    </elements>
 </model>
